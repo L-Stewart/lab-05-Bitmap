@@ -1,7 +1,9 @@
 {
+  "extends": ["airbnb-base","plugin:jest/recommended"],
   "env": {
     "browser": true
   },
+  "plugins": ["jest"],
   "rules": {
     "arrow-body-style": "off",
     "class-methods-use-this": "off",
@@ -13,8 +15,6 @@
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-trailing-spaces":"off",
     "no-underscore-dangle": "off",
-    "strict": "off",
-    "camelcase": "off",
-    "new-cap": "off"
+    "strict": "off"
   }
 }

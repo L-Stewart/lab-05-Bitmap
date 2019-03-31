@@ -1,46 +1,22 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
-=================================================
+# Bitmap Transformer
 
-## Project Name
+[![Build Status]]
 
-### Author: Student/Group Name
+Group Authors: Connor Sihon
 
-### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+This is a command line application that transforms .bmp files.
 
-#### Documentation
-* [swagger](http://xyz.com) (API assignments only)
-* [jsdoc](http://xyz.com) (All assignments)
+## How To Use:
 
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+* You can run one of three transforms on the baldy.bmp asset.
+* There are three options of transforms you can run:
+1. `node index.js /assets/baldy.bmp goldenState`
+2. `node index.js /assets/baldy.bmp randomize`
+3. `node index.js /assets/baldy.bmp pinky`
+4. `node index.js baldy.bmp blueman.bmp doTheInversion`
+5. `node index.js /assets/baldy.bmp transformGreyscale`
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+by running these command line invocations within the lab-05-bitmap/lib/ folder, node will parse the invocation and our file will will set the filepath and desired operation by using process.argv.slice()
 
-###### `bar(array) -> array`
-Usage Notes or examples
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-  
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
-
-#### UML
-Link to an image of the UML for your application and response to events
+Once you have run a transform method, you can look inside the assets folder inside of __tests__ and view the output.
