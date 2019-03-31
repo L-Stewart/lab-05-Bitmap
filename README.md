@@ -1,7 +1,6 @@
 # Bitmap Transformer
 
-[![Build Status]]
-
+[![Build Status](https://travis-ci.com/L-Stewart/lab-05-Bitmap.svg?branch=master)](https://travis-ci.com/L-Stewart/lab-05-Bitmap)
 Group Authors: Connor Sihon
 
 This is a command line application that transforms .bmp files.
